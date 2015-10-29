@@ -30,7 +30,7 @@ class HomeController extends BaseController {
 		return View::make('login');
 	}
 
-	public function dologin() {
+	public function doLogin() {
 		// validate the info, create rules for the inputs
 		$rules = array(
 			'username'    => 'required|email', // make sure the email is an actual email

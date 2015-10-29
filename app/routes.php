@@ -27,7 +27,7 @@ Route::resource('homes', 'HomeController');
 Route::get('/', array('before' => 'auth', 'uses' => 'HomeController@index'));
 Route::get('/login', 'HomeController@login');
 
-Route::post('/login', 'HomeController@dologin');
+Route::post('/login', 'HomeController@doLogin');
 
 Route::get('logout', array(
 	'as' => 'account-sign-out',
