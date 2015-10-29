@@ -14,7 +14,7 @@ class UserTableSeeder extends Seeder
             'updated_at'=>date('Y-m-d H:m:s')
         ));
         DB::table('users')->insert(array(
-            'username'=>'thong',
+            'username'=>'thong@gmail.com',
             'password' => Hash::make('123456'),
             'role' => 1,
             'created_at'=>date('Y-m-d H:m:s'),

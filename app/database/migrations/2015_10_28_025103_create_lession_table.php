@@ -17,7 +17,7 @@ class CreateLessionTable extends Migration {
 			$table->increments('id'); //Autoincremented primary key
 			$table->string('title');
 			$table->string('description');
-			$table->integer('courseid');
+			$table->integer('course_id');
 
 			$table->timestamps();
 		});
