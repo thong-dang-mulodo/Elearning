@@ -34,10 +34,6 @@ Route::get('logout', array(
 	'uses' => 'HomeController@logout'
 ));
 
-//Route::get('/account/sign-out', array(
-//	'as' => 'account-sign-out',
-//	'uses' => 'AccountController@getSignOut'
-//));
-
-
 Route::get('/lession/{courseid}', array('before' => 'auth','uses' => 'HomeController@showLession'));
+Route::get('/addlession/{courseid}', array('before' => 'auth','uses' => 'HomeController@addLession'));
+Route::get('/dosaveLession/{courseid}', array('uses' => 'HomeController@dosaveLession'));

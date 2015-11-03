@@ -84,4 +84,13 @@ class HomeController extends BaseController {
 		return View::make('home.lession')->with('lessions',$lessions)->with('coursename',$coursename);
 	}
 
+	public function addLession($courseid) {
+		return View::make('home.addlession');
+	}
+
+	public function dosaveLession($courseid) {
+		var_dump(1);die;
+	}
+
+
 }

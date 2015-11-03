@@ -82,6 +82,10 @@
             </div>
 
         </aside>
+
+        <div>
+            <a href="{{ URL::to('addlession/1') }}" class="btn btn-default">Add Lession</a>
+        </div>
         <!-- /Sidebar -->
 
     </div>
